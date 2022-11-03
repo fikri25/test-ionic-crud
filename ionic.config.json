@@ -1,0 +1,11 @@
+{
+  "name": "test-crud-ionoc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "proxies": [{
+    "path": "/api",
+    "proxyUrl": "http://localhost/test-crud-ionic"
+  }]
+}
