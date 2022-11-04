@@ -14,22 +14,9 @@ export class ApiService {
 
   //link API
   apiURL() {
-    return "http://localhost/test-crud-ionic/api";
+    return "http://localhost/test_ionic_crud/api";
   }
-
-  getMahasiswa() {
-    return this.http.get(this.apiURL() + '/tampil.php');
-  }
-
-  deleteMahasiswa(id) {
-    return this.http.delete(this.apiURL() + '/hapus.php?nim=' + id);
-  }
-
-  ambilMahasiswa(id) {
-    return this.http.get(this.apiURL() + '/lihat.php?nim=' + id);
-  }
-
-  
+    
   getTest() {
     return this.http.get(this.apiURL() + '/tampilTest.php');
   }

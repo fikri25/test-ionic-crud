@@ -26,16 +26,16 @@
   <ion-content class="ion-margin">
     <ion-grid class="ion-margin">
       <ion-row>
-        <ion-col>No</ion-col>
+        <!-- <ion-col>No</ion-col> -->
         <ion-col>Nilai Awal</ion-col>
         <ion-col>Nilai Akhir</ion-col>
         <ion-col>Bilangan Prima</ion-col>
         <ion-col>Action</ion-col>
       </ion-row>
       <ion-row lines="inset" *ngFor="let test_value of test ; index as i">
-        <ion-col>{{ i + 1 }}</ion-col>
-        <ion-col>{{ test_value.nil_awal }}</ion-col>
-        <ion-col>{{ test_value.nil_akhir }}</ion-col>
+        <!-- <ion-col>{{ i + 1 }}</ion-col> -->
+        <ion-col class="right">{{ test_value.nil_awal }}</ion-col>
+        <ion-col class="right">{{ test_value.nil_akhir }}</ion-col>
         <ion-col>{{ test_value.hasil }}</ion-col>
         <ion-col>
           <ion-button size="small" color="primary" [routerLink]="['/test-edit/',test_value.id]"
